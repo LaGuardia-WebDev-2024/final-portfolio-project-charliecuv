@@ -1,7 +1,7 @@
 /* Styling Only Related To ALL Pages */
 
 body {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   margin-left: 0px;
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
@@ -19,6 +19,16 @@ ul {
   z-index: 999;
 }
 
+.yay{
+  display:inline-block;
+  width:50%;
+  margin:25% auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:3em;
+  line-height:1.5em;
+  background:hsla(67, 95%, 95%, 1);
+}
+
 li {
   float: left;
 }
@@ -32,11 +42,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: orange;
+  background-color: rgba(242, 208, 215, 0.766);
 }
 
 .active {
-  background-color: red;
+  background-color: rgb(197, 104, 113);
 }
 
 h1 {
