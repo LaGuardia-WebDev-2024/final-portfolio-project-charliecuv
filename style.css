@@ -4,6 +4,10 @@ body {
   /* padding-top: 30px; */
   margin-left: 0px;
 }
+
+html{
+  background-color: rgb(242, 178, 178);
+}
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
 https://www.w3schools.com/css/css_navbar_horizontal.asp */
@@ -12,22 +16,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: hsla(67, 95%, 95%, 1);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
 }
 
-.yay{
-  display:inline-block;
-  width:50%;
-  margin:25% auto;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  padding:3em;
-  line-height:1.5em;
-  background:hsla(67, 95%, 95%, 1);
-}
+
 
 li {
   float: left;
