@@ -5,24 +5,31 @@
     <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-      /* Styling Only Related To THIS Page */
-       .parent-flex {
-        display: flex;
-        background-color: rgb(242, 178, 178);
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 500px;
-      }
-
-     /* .parent-flex img {
-        width: 150px;
-        padding: 20px;
-      }
-      .child-flex p {
-        background-color:rgb(242, 178, 178);
-        padding: 20px;
-        margin: 20px;
-      } */
+      .parent {
+  position:relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.image1 {
+  position: absolute;
+   width:700px;
+  top: 150px;
+  left: 580px;
+}
+.image2 {
+   width:700px;
+  position: absolute;
+  top: 30px;
+  left: 470px;
+}
+.image3 {
+   width:700px;
+  position: absolute;
+  top: 30px;
+  left: 470px;
+}
     </style>
   </head>
   <body>
@@ -36,29 +43,16 @@
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1></h1>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <img
-          src=""
-        />
-      </div>
-      <div class="child-flex">
-        <p>
-     
-        </p>
-      </div>
-    </div>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <p>
-        
-        </p>
-      </div>
-      <div class="child-flex">
-        <img
-          src=""
-        />
-      </div>
-    </div>
+  
+    <div class="parent">
+  <img class="image3" src="images/IMG_1068.png" />
+  <img class="image1" src="images/IMG_1066.png" />
+  <img class="image2" src="images/IMG_1067.png" />
+  
+</div>
+  </body>
+</html>
+
+</div>
   </body>
 </html>
