@@ -30,6 +30,36 @@
   top: 30px;
   left: 470px;
 }
+.image4 {
+   width:600px;
+  position: absolute;
+ top: 400px;
+  left: 470px;
+}
+.image5 {
+   width:600px;
+  position: absolute;
+   top: 400px;
+  left: 470px;
+}
+.image6 {
+   width:600px;
+  position: absolute;
+  top: 400px;
+  left: 470px;
+}
+.image7 {
+   width:600px;
+  position: absolute;
+  top: 400px;
+  left: 570px;
+}
+.image8 {
+   width:600px;
+  position: absolute;
+  top: 400px;
+  left: 470px;
+}
     </style>
   </head>
   <body>
@@ -48,11 +78,73 @@
   <img class="image3" src="images/IMG_1068.png" />
   <img class="image1" src="images/IMG_1066.png" />
   <img class="image2" src="images/IMG_1067.png" />
+  <img class="image4" src="images/IMG_1069.png" />
+  <img class="image5" src="images/IMG_1070.png" />
+  <img class="image6" src="images/IMG_1071.png" />
+  <img class="image7" src="images/IMG_1072.png" />
+  <img class="image8" src="images/IMG_1074.png" />
   
 </div>
   </body>
 </html>
 
 </div>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+
+var randomNum = 1;
+
+  $(".image4").hide();
+  $(".image5").hide();
+  $(".image6").hide();
+  $(".image7").hide();
+  $(".image8").hide();
+
+$("body").click(function() {
+    console.log("i here"); 
+
+      if(randomNum == 1){
+        $(".image4").show();
+        $(".image5").hide();
+        $(".image6").hide();
+        $(".image7").hide();
+        $(".image8").hide();
+      }
+
+      else if(randomNum == 2){
+        $(".image4").hide();
+        $(".image5").show();
+        $(".image6").hide();
+        $(".image7").hide();
+        $(".image8").hide();
+      }
+      else if(randomNum == 3){
+        $(".image4").hide();
+        $(".image5").hide();
+        $(".image6").show();
+        $(".image7").hide();
+        $(".image8").hide();
+      }
+      else if(randomNum == 4){
+        $(".image4").hide();
+        $(".image5").hide();
+        $(".image6").hide();
+        $(".image7").show();
+        $(".image8").hide();
+      }
+      else if(randomNum == 5){
+        $(".image4").hide();
+        $(".image5").hide();
+        $(".image6").hide();
+        $(".image7").hide();
+        $(".image8").show();
+      }
+
+});
+
+      </script>
   </body>
 </html>
