@@ -52,7 +52,7 @@
    width:600px;
   position: absolute;
   top: 400px;
-  left: 570px;
+  left: 470px;
 }
 .image8 {
    width:600px;
@@ -67,8 +67,8 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="aboutme.html">cafe</a></li>
-      <li><a href="art.html">menu</a></li>
-      <li><a href="resume.html">list of customers</a></li>
+      <li><a href="art.html">cooking station</a></li>
+      <li><a href="resume.html">menu</a></li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
@@ -103,8 +103,10 @@ var randomNum = 1;
   $(".image7").hide();
   $(".image8").hide();
 
-$("body").click(function() {
+  setInterval(function() {
+// $("body").click(function() {
     console.log("i here"); 
+    randomNum = Math.floor(Math.random() * 5) + 1;
 
       if(randomNum == 1){
         $(".image4").show();
@@ -142,8 +144,8 @@ $("body").click(function() {
         $(".image7").hide();
         $(".image8").show();
       }
-
-});
+}, 10000); 
+// });
 
       </script>
   </body>
