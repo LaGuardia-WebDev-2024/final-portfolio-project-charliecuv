@@ -5,6 +5,7 @@
     <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
+      /* cats lol */
       .parent {
   position:relative;
   top: 0;
@@ -60,6 +61,32 @@
   top: 400px;
   left: 470px;
 }
+
+/* menu stuff idk*/
+.Bingsu {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.coffe {
+    width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.sundae {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.boba {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;}
+
     </style>
   </head>
   <body>
@@ -84,6 +111,13 @@
   <img class="image7" src="images/IMG_1072.png" />
   <img class="image8" src="images/IMG_1074.png" />
   
+  <!-- what they want -->
+ <img class="Bingsu" src="IMG_1080.png" />
+ <img class="coffe" src="IMG_1081.png" />
+ <img class="sundae" src="IMG_1082.png" />
+ <img class="boba" src="IMG_1083.png" />
+
+
 </div>
   </body>
 </html>
@@ -145,9 +179,50 @@ var randomNum = 1;
         $(".image8").show();
       }
 }, 10000); 
+
+// menu
+var randomNum = 1;
+
+  $(".Bingsu").show();
+  $(".coffe").hide();
+  $(".sundae").hide();
+  $(".boba").hide();
+
+  setInterval(function() {
+// $("body").click(function() {
+    console.log("i here"); 
+    randomNum = Math.floor(Math.random() * 4) + 1;
+
+      if(randomNum == 1){
+        $(".Bingsu").show();
+        $(".coffe").hide();
+        $(".sundae").hide();
+        $(".boba").hide();
+      }
+
+      else if(randomNum == 2){
+        $(".Bingsu").hide();
+         $(".coffe").show();
+        $(".sundae").hide();
+        $(".boba").hide();
+      }
+      else if(randomNum == 3){
+        $(".Bingsu").hide();
+        $(".coffe").hide();
+        $(".sundae").show();
+        $(".boba").hide();
+      }
+      else if(randomNum == 4){
+        $(".Bingsu").hide();
+        $(".coffe").hide();
+        $(".sundae").hide();
+        $(".boba").show();
+      }
+      }, 10000); 
 // });
+// audio
    var audio = document.createElement("audio");
-    audio.src = "my_sound.mp3";
+    audio.src = "coffee time.wav";
     audio.play();
 
       </script>
