@@ -61,7 +61,6 @@
   top: 400px;
   left: 470px;
 }
-
 /* menu stuff idk*/
 .Bingsu {
    width:300px;
@@ -87,6 +86,101 @@
  top: 350px;
   left: 470px;}
 
+/* how to make BINGSU */
+.EB {
+   width:300px;
+  position: absolute;
+ top: -50px;
+  left: -70px;
+}
+.MB {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.AD {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+/* how to make coffee */
+.EC {
+   width:300px;
+  position: absolute;
+top: 50px;
+  left: -70px;
+}
+.MC {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.CC {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+/* how to make sunade */
+.ETC {
+   width:300px;
+  position: absolute;
+top: 130px;
+  left: -70px;
+}
+.MTC {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+.IC {
+   width:300px;
+  position: absolute;
+ top: 350px;
+  left: 470px;
+}
+
+.coffee {
+  position: absolute;
+   width:300px;
+  top: 250px;
+  left: 10px;
+  z-index: 99;
+}
+.cookie {
+  position: absolute;
+   width:300px;
+  top: 250px;
+  left: 80px;
+  z-index: 99;
+}
+.icecream {
+  position: absolute;
+   width:300px;
+  top: 250px;
+  left: 150px;
+  z-index: 99;
+}
+
+.milk {
+  position: absolute;
+   width:300px;
+  top: 350px;
+  left: 10px;
+  z-index: 99;
+}
+.strawberry {
+  position: absolute;
+   width:300px;
+  top: 330px;
+  left: 80px;
+  z-index: 99;
+}
+
     </style>
   </head>
   <body>
@@ -99,8 +193,6 @@
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1></h1>
-  
     <div class="parent">
   <img class="image3" src="images/IMG_1068.png" />
   <img class="image1" src="images/IMG_1066.png" />
@@ -117,6 +209,28 @@
  <img class="sundae" src="IMG_1082.png" />
  <img class="boba" src="IMG_1083.png" />
 
+<!-- how to make bingsu -->
+  <img class="EB" src="emptybowl.png" />
+  <img class="MB" src="milkinbowl.png" />
+  <img class="AD" src="almostdone.png" />
+
+  <!-- how to make coffe -->
+  <img class="EC" src="emptycup.png" />
+  <img class="MC" src="milkincup.png" />
+  <img class="CC" src="coffeeincup.png" />
+
+  <!-- how to make sundae -->
+ <img class="ETC" src="emptytallcup.png" />
+ <img class="MTC" src="milkintallcup.png" />
+ <img class="IC" src="icecreamincup.png" />
+
+<!-- ingreditents -->
+
+  <img class="coffee" src="coffee.png" />
+  <img class="cookie" src="cookie.png" />
+  <img class="icecream" src="icecream.png" />
+  <img class="milk" src="milk.png" />
+  <img class="strawberry" src="strawberry.png" />
 
 </div>
   </body>
@@ -220,6 +334,8 @@ var randomNum = 1;
       }
       }, 10000); 
 // });
+
+
 // audio
    var audio = document.createElement("audio");
     audio.src = "coffee time.wav";
