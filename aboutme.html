@@ -295,7 +295,7 @@ var randomNum = 1;
 }, 10000); 
 
 // menu
-var randomNum = 1;
+var randomO = 1;
 
   $(".Bingsu").show();
   $(".coffe").hide();
@@ -305,28 +305,28 @@ var randomNum = 1;
   setInterval(function() {
 // $("body").click(function() {
     console.log("i here"); 
-    randomNum = Math.floor(Math.random() * 4) + 1;
+    // randomO = Math.floor(Math.random() * 4) + 1;
 
-      if(randomNum == 1){
+      if(randomO == 1){
         $(".Bingsu").show();
         $(".coffe").hide();
         $(".sundae").hide();
         $(".boba").hide();
       }
 
-      else if(randomNum == 2){
+      else if(randomO== 2){
         $(".Bingsu").hide();
          $(".coffe").show();
         $(".sundae").hide();
         $(".boba").hide();
       }
-      else if(randomNum == 3){
+      else if(randomO== 3){
         $(".Bingsu").hide();
         $(".coffe").hide();
         $(".sundae").show();
         $(".boba").hide();
       }
-      else if(randomNum == 4){
+      else if(randomO == 4){
         $(".Bingsu").hide();
         $(".coffe").hide();
         $(".sundae").hide();
@@ -335,6 +335,22 @@ var randomNum = 1;
       }, 10000); 
 // });
 
+var step=1;console.log("step is"+step);
+console.log("randomO is"+randomO);
+$(".EB").click(function () {
+  console.log("made it here");
+if(randomO==1 && step==1){
+  console.log("corrct");
+  step=2;
+}
+});
+
+var step=2;
+$(".EC").click(function () {
+if(randomO==2 && step==2)
+console.log("herelol");
+{step=3;}
+});
 
 // audio
    var audio = document.createElement("audio");
