@@ -92,12 +92,14 @@
   position: absolute;
  top: -50px;
   left: -70px;
+  z-index: 99;
 }
 .MB {
    width:300px;
   position: absolute;
  top: 350px;
   left: 470px;
+   z-index: 99;
 }
 .AD {
    width:300px;
@@ -144,6 +146,13 @@ top: 130px;
   left: 470px;
 }
 
+.focus {
+   width:300px;
+  position: absolute;
+top: 130px;
+  left: 60px;
+}
+
 .coffee {
   position: absolute;
    width:300px;
@@ -163,7 +172,7 @@ top: 130px;
    width:300px;
   top: 250px;
   left: 150px;
-  z-index: 99;
+  z-index: 110;
 }
 
 .milk {
@@ -171,7 +180,7 @@ top: 130px;
    width:300px;
   top: 350px;
   left: 10px;
-  z-index: 99;
+  z-index: 109;
 }
 .strawberry {
   position: absolute;
@@ -213,6 +222,10 @@ top: 130px;
   <img class="EB" src="emptybowl.png" />
   <img class="MB" src="milkinbowl.png" />
   <img class="AD" src="almostdone.png" />
+
+  <div>
+    <img class='focus' src="">
+  </div>
 
   <!-- how to make coffe -->
   <img class="EC" src="emptycup.png" />
@@ -335,21 +348,31 @@ var randomO = 1;
       }, 10000); 
 // });
 
+
+
 var step=1;
 $(".EB").click(function () {
 if(randomO==1 && step==1){
   step=2;
+  $(".focus").attr("src","emptybowl.png");
+}
+console.log('i was clicked')
+});
+
+$(".milk").click(function () {
+if(randomO==1 && step==2){
+  step=3;
+  $(".focus").attr("src","milkinbowl.png");
 }
 });
 
-// var step=1;console.log("step is"+step);
-// console.log("randomO is"+randomO);
-// $(".EB").click(function () {
-//   console.log("made it here");
-// if(randomO==1 && step==1){
-//   console.log("corrct");
-//   step=2;
-// }
+$(".icecream").click(function () {
+if(randomO==1 && step==3){
+  step=4;
+  $(".focus").attr("src","almostdone.png");
+}
+});
+
 // audio
    var audio = document.createElement("audio");
     audio.src = "coffee time.wav";
