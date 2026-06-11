@@ -67,6 +67,7 @@
   position: absolute;
  top: 350px;
   left: 470px;
+  z-index: 99;
 }
 .coffe {
     width:300px;
@@ -172,8 +173,7 @@ top: 130px;
    width:300px;
   top: 250px;
   left: 150px;
-  z-index: 110;
-}
+ z-index: 111;}
 
 .milk {
   position: absolute;
@@ -187,7 +187,7 @@ top: 130px;
    width:300px;
   top: 330px;
   left: 80px;
-  z-index: 99;
+  z-index: 108;
 }
 
     </style>
@@ -372,6 +372,15 @@ if(randomO==1 && step==3){
   $(".focus").attr("src","almostdone.png");
 }
 });
+
+$(".milk").click(function () {
+if(randomO==1 && step==4){
+  step=5;
+  $(".focus").attr("src","IMG_1080.png");
+}
+});
+
+
 
 // audio
    var audio = document.createElement("audio");
